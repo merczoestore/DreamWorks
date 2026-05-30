@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamWorks – Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --color-bg: #f7f6f2; --color-surface: #f9f8f5; --color-surface-2: #fbfbf9;
+      --color-surface-offset: #f0ede8; --color-divider: #dcd9d5; --color-border: #d4d1ca;
+      --color-text: #28251d; --color-text-muted: #6b6a65; --color-text-faint: #b0afa9;
+      --color-primary: #01696f; --color-primary-hover: #0c4e54; --color-primary-highlight: #cedcd8;
+      --shadow-sm: 0 1px 2px rgba(40,37,29,0.06); --shadow-md: 0 4px 12px rgba(40,37,29,0.08);
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-full: 9999px;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+      --content-narrow: 720px;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1c1b19; --color-surface-2: #201f1d;
+      --color-surface-offset: #222120; --color-divider: #262523; --color-border: #393836;
+      --color-text: #cdccca; --color-text-muted: #797876; --color-text-faint: #5a5957;
+      --color-primary: #4f98a3; --color-primary-hover: #227f8b; --color-primary-highlight: #1e3535;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2); --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        --color-bg: #171614; --color-surface: #1c1b19; --color-surface-2: #201f1d;
+        --color-surface-offset: #222120; --color-divider: #262523; --color-border: #393836;
+        --color-text: #cdccca; --color-text-muted: #797876; --color-text-faint: #5a5957;
+        --color-primary: #4f98a3; --color-primary-hover: #227f8b; --color-primary-highlight: #1e3535;
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.2); --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-font-smoothing: antialiased; }
+    body { min-height: 100dvh; font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text); background-color: var(--color-bg); line-height: 1.75; transition: background-color var(--transition), color var(--transition); }
+    h1, h2, h3 { text-wrap: balance; }
+    p, li { text-wrap: pretty; max-width: 72ch; }
+    /* Skip link */
+    .skip-link { position: absolute; left: -9999px; top: var(--space-2); padding: var(--space-2) var(--space-4); background: var(--color-primary); color: #fff; border-radius: var(--radius-sm); font-size: var(--text-sm); text-decoration: none; z-index: 9999; }
+    .skip-link:focus { left: var(--space-4); }
+    /* Header */
+    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(247,246,242,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--color-divider); padding: var(--space-4) var(--space-6); display: flex; align-items: center; justify-content: space-between; transition: background var(--transition); }
+    [data-theme="dark"] .site-header { background: rgba(23,22,20,0.88); }
+    .logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text); }
+    .logo-text { font-family: var(--font-display); font-size: var(--text-lg); font-style: italic; }
+    .theme-toggle { width: 40px; height: 40px; border-radius: var(--radius-full); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-muted); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all var(--transition); }
+    .theme-toggle:hover { background: var(--color-surface-offset); color: var(--color-text); }
+    /* Hero */
+    .hero { padding: clamp(3rem,8vw,4rem) var(--space-6) clamp(2rem,4vw,3rem); max-width: var(--content-narrow); margin-inline: auto; }
+    .badge { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-1) var(--space-3); background: var(--color-primary-highlight); color: var(--color-primary); border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-6); }
+    .hero h1 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400; font-style: italic; line-height: 1.15; color: var(--color-text); margin-bottom: var(--space-4); }
+    .hero-meta { font-size: var(--text-sm); color: var(--color-text-muted); display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+    .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--color-text-faint); flex-shrink: 0; }
+    /* Divider */
+    .divider { max-width: var(--content-narrow); margin-inline: auto; padding-inline: var(--space-6); }
+    .divider hr { border: none; border-top: 1px solid var(--color-divider); }
+    /* Main */
+    .policy-body { max-width: var(--content-narrow); margin-inline: auto; padding: clamp(2rem,5vw,3rem) var(--space-6) var(--space-16); }
+    /* TOC */
+    .toc { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-10); }
+    .toc-title { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: var(--space-4); }
+    .toc ol { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: var(--space-2); }
+    .toc li { counter-increment: toc; display: flex; align-items: baseline; gap: var(--space-3); }
+    .toc li::before { content: counter(toc, decimal-leading-zero); font-size: var(--text-xs); font-weight: 600; color: var(--color-text-faint); flex-shrink: 0; }
+    .toc a { font-size: var(--text-sm); color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
+    .toc a:hover { color: var(--color-primary-hover); text-decoration: underline; }
+    /* Sections */
+    .policy-section { margin-bottom: var(--space-10); scroll-margin-top: 5rem; }
+    .section-number { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .policy-section h2 { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 400; font-style: italic; color: var(--color-text); margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-divider); }
+    .policy-section h3 { font-size: var(--text-base); font-weight: 700; color: var(--color-text); margin-top: var(--space-6); margin-bottom: var(--space-3); }
+    .policy-section p { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul, .policy-section ol { padding-left: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4); }
+    .policy-section li { color: var(--color-text-muted); }
+    .policy-section strong { color: var(--color-text); font-weight: 600; }
+    /* No-share banner */
+    .no-share-banner { display: flex; align-items: flex-start; gap: var(--space-4); background: var(--color-primary-highlight); border-radius: var(--radius-lg); padding: var(--space-5) var(--space-6); margin-top: var(--space-4); margin-bottom: var(--space-6); }
+    .no-share-icon { flex-shrink: 0; color: var(--color-primary); margin-top: 2px; }
+    .no-share-text { font-size: var(--text-sm); color: var(--color-primary); font-weight: 500; line-height: 1.65; max-width: none; margin: 0; }
+    /* Info card */
+    .info-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); margin-top: var(--space-6); }
+    .info-card-label { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-faint); margin-bottom: var(--space-3); }
+    .info-card-row { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-divider); }
+    .info-card-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-card-key { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); min-width: 100px; }
+    .info-card-val { font-size: var(--text-sm); color: var(--color-text-muted); margin: 0; max-width: none; }
+    .info-card-val a { color: var(--color-primary); text-decoration: none; }
+    .info-card-val a:hover { text-decoration: underline; }
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--color-divider); padding: var(--space-8) var(--space-6); text-align: center; }
+    .site-footer p { font-size: var(--text-xs); color: var(--color-text-faint); max-width: none; }
+    @media (max-width: 640px) {
+      .site-header { padding: var(--space-3) var(--space-4); }
+      .hero, .policy-body, .divider { padding-inline: var(--space-4); }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <a href="#" class="logo" aria-label="DreamWorks home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M7 14 Q10.5 7 14 14 Q17.5 21 21 14" stroke="var(--color-primary)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="14" cy="14" r="2.5" fill="var(--color-primary)"/>
+      </svg>
+      <span class="logo-text">DreamWorks</span>
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <div class="badge">
+      <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="4"/></svg>
+      Legal
+    </div>
+    <h1 id="page-title">Privacy Policy</h1>
+    <div class="hero-meta">
+      <span>DreamWorks &mdash; iOS App</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Last updated: May 30, 2026</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Wyoming, United States</span>
+    </div>
+  </section>
+
+  <div class="divider"><hr /></div>
+
+  <main id="main-content" class="policy-body">
+
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        <li><a href="#s1">Interpretation &amp; Definitions</a></li>
+        <li><a href="#s2">Data We Collect</a></li>
+        <li><a href="#s3">How We Use Your Data</a></li>
+        <li><a href="#s4">Sharing Your Data</a></li>
+        <li><a href="#s5">Data Retention</a></li>
+        <li><a href="#s6">International Transfers</a></li>
+        <li><a href="#s7">Your Rights &amp; Deletion</a></li>
+        <li><a href="#s8">Disclosure of Your Data</a></li>
+        <li><a href="#s9">Security</a></li>
+        <li><a href="#s10">Children's Privacy</a></li>
+        <li><a href="#s11">Links to Other Websites</a></li>
+        <li><a href="#s12">Changes to This Policy</a></li>
+        <li><a href="#s13">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <div class="policy-section">
+      <p>This Privacy Policy describes the policies and procedures on the collection, use, and disclosure of Your information when You use the DreamWorks iOS application (the &ldquo;Service&rdquo;), and tells You about Your privacy rights and how the law protects You.</p>
+      <p>By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+    </div>
+
+    <section class="policy-section" id="s1">
+      <p class="section-number">01</p>
+      <h2>Interpretation &amp; Definitions</h2>
+      <h3>Interpretation</h3>
+      <p>The words whose initial letters are capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+      <h3>Definitions</h3>
+      <ul>
+        <li><strong>Application</strong> refers to <em>DreamWorks</em>, the iOS software program.</li>
+        <li><strong>Country</strong> refers to: Wyoming, United States.</li>
+        <li><strong>Device</strong> means any device that can access the Service, such as a smartphone or digital tablet.</li>
+        <li><strong>Personal Data</strong> (or &ldquo;Personal Information&rdquo;) is any information that relates to an identified or identifiable individual.</li>
+        <li><strong>Service</strong> refers to the Application.</li>
+        <li><strong>Service Provider</strong> means any natural or legal person who processes data on Our behalf, including third-party companies employed to facilitate or support the Service.</li>
+        <li><strong>Usage Data</strong> refers to data collected automatically when using the Service.</li>
+        <li><strong>We / Us / Our</strong> refers to the individual developer of DreamWorks, located in Wyoming, United States.</li>
+        <li><strong>You</strong> means the individual accessing or using the Service.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="s2">
+      <p class="section-number">02</p>
+      <h2>Data We Collect</h2>
+      <h3>Personal Data You Provide</h3>
+      <p>When You register for an account, We ask You to provide:</p>
+      <ul>
+        <li><strong>Full name</strong></li>
+        <li><strong>Email address</strong></li>
+      </ul>
+      <p>This information is used solely to create and manage Your account within the Service. Authentication and profile management are handled securely via <strong>Supabase</strong>, a third-party backend-as-a-service provider. Supabase processes Your data under strict data protection obligations in accordance with their own privacy policy.</p>
+      <h3>Usage Data</h3>
+      <p>Usage Data is collected automatically when using the Service. It may include information such as Your Device&rsquo;s IP address, device type, operating system version, the features of the Service You interact with, timestamps, session duration, unique device identifiers, and other diagnostic data.</p>
+      <h3>Purchase Data</h3>
+      <p>DreamWorks is a paid application. All purchases are processed exclusively through Apple&rsquo;s App Store. We do not collect, store, or have access to your payment card information. Billing is governed entirely by Apple&rsquo;s own Privacy Policy and Terms of Service.</p>
+    </section>
+
+    <section class="policy-section" id="s3">
+      <p class="section-number">03</p>
+      <h2>How We Use Your Data</h2>
+      <p>We use the Personal Data We collect solely for the following purposes:</p>
+      <ul>
+        <li><strong>To provide and maintain the Service</strong>, including monitoring usage to detect and resolve issues.</li>
+        <li><strong>To manage Your Account</strong> &mdash; to allow You to register and access functionalities available to registered users.</li>
+        <li><strong>To perform our contract</strong> &mdash; to honor the purchase You made through the App Store.</li>
+        <li><strong>To contact You</strong> &mdash; to send essential notifications such as security updates or important changes to the Service. We do not send unsolicited marketing emails.</li>
+        <li><strong>To manage Your requests</strong> &mdash; to respond to support enquiries You send to Us.</li>
+        <li><strong>For service analytics</strong> &mdash; to understand how features are used and improve the Service experience.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="s4">
+      <p class="section-number">04</p>
+      <h2>Sharing Your Data</h2>
+      <div class="no-share-banner" role="note" aria-label="Data sharing commitment">
+        <span class="no-share-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <p class="no-share-text">We do <strong>not</strong> sell, rent, or trade Your Personal Data to any third party for commercial or marketing purposes &mdash; ever.</p>
+      </div>
+      <h3>Limited Sharing</h3>
+      <p>We share Your data only in the following strictly limited circumstances:</p>
+      <ul>
+        <li><strong>Supabase</strong>: Your name and email are stored and managed through Supabase to provide authentication and profile services. Supabase acts as a data processor under strict contractual data protection obligations.</li>
+        <li><strong>Apple App Store</strong>: Purchase and device information is handled by Apple as part of App Store infrastructure.</li>
+        <li><strong>Business transfers</strong>: If the Service is acquired or merged with another entity, Your Personal Data may be transferred. You will be notified before such a transfer takes place.</li>
+        <li><strong>Legal requirements</strong>: We may disclose Your data if required by law or in response to valid requests by public authorities (e.g., a court or government agency).</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="s5">
+      <p class="section-number">05</p>
+      <h2>Data Retention</h2>
+      <p>We retain Your Personal Data only for as long as is necessary for the purposes described in this Privacy Policy, or as required to comply with legal obligations, resolve disputes, and enforce our agreements.</p>
+      <ul>
+        <li><strong>Account information</strong> (name, email): retained for the duration of Your account relationship, plus up to <strong>24 months</strong> after account closure to handle post-termination issues.</li>
+        <li><strong>Usage data</strong>: up to <strong>24 months</strong> for feature analytics and service improvement.</li>
+        <li><strong>Server logs</strong> (IP addresses, access times): up to <strong>24 months</strong> for security monitoring and troubleshooting.</li>
+      </ul>
+      <p>When retention periods expire, We securely delete or anonymize Your Personal Data. Anonymized data that cannot be linked back to You may be retained indefinitely for aggregate analytics purposes.</p>
+    </section>
+
+    <section class="policy-section" id="s6">
+      <p class="section-number">06</p>
+      <h2>International Transfers</h2>
+      <p>DreamWorks is available globally through the Apple App Store. Your information, including Personal Data, is processed at Our operating location in Wyoming, United States, and may be stored on servers operated by Supabase, which may be located outside of Your country of residence.</p>
+      <p>Where required by applicable law &mdash; including the GDPR for users in the European Economic Area or the United Kingdom &mdash; We ensure that international transfers of Your Personal Data are subject to appropriate safeguards. No transfer will take place unless adequate controls are in place to protect the security of Your data.</p>
+    </section>
+
+    <section class="policy-section" id="s7">
+      <p class="section-number">07</p>
+      <h2>Your Rights &amp; Deletion</h2>
+      <h3>Your Rights</h3>
+      <p>Depending on Your location, You may have the following rights regarding Your Personal Data:</p>
+      <ul>
+        <li><strong>Access</strong>: Request a copy of the data We hold about You.</li>
+        <li><strong>Correction</strong>: Request that inaccurate data be corrected.</li>
+        <li><strong>Deletion</strong>: Request deletion of Your Personal Data.</li>
+        <li><strong>Portability</strong>: Request Your data in a portable, machine-readable format (where applicable).</li>
+        <li><strong>Objection / Restriction</strong>: Object to or restrict the processing of Your data (EEA/UK users &mdash; GDPR).</li>
+        <li><strong>Non-discrimination</strong>: We will not discriminate against You for exercising Your rights (California users &mdash; CCPA/CPRA).</li>
+      </ul>
+      <h3>Deleting Your Data</h3>
+      <p>You may request deletion of Your account and all associated Personal Data at any time by contacting Us at the email address listed in the Contact section below. We will process Your request within a reasonable timeframe. Please note that We may retain certain data where We have a legal obligation to do so.</p>
+      <h3>California Residents (CCPA/CPRA)</h3>
+      <p>We do <strong>not</strong> sell Your Personal Data. California residents have the right to know what data is collected, to request deletion, and to be free from discrimination for exercising their privacy rights.</p>
+      <h3>EEA &amp; UK Residents (GDPR / UK GDPR)</h3>
+      <p>If You are located in the European Economic Area or the United Kingdom, You have the right to lodge a complaint with Your local data protection supervisory authority if You believe Your data has been processed unlawfully.</p>
+    </section>
+
+    <section class="policy-section" id="s8">
+      <p class="section-number">08</p>
+      <h2>Disclosure of Your Data</h2>
+      <h3>Law Enforcement</h3>
+      <p>Under certain circumstances, We may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency).</p>
+      <h3>Other Legal Requirements</h3>
+      <p>We may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+      <ul>
+        <li>Comply with a legal obligation</li>
+        <li>Protect and defend Our rights or property</li>
+        <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+        <li>Protect the personal safety of users of the Service or the public</li>
+        <li>Protect against legal liability</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="s9">
+      <p class="section-number">09</p>
+      <h2>Security</h2>
+      <p>The security of Your Personal Data is important to Us. We use commercially reasonable means &mdash; including the security features provided by Supabase &mdash; to protect Your Personal Data. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and We cannot guarantee its absolute security.</p>
+    </section>
+
+    <section class="policy-section" id="s10">
+      <p class="section-number">10</p>
+      <h2>Children's Privacy</h2>
+      <p>Our Service does not address anyone under the age of <strong>13</strong> (or under <strong>16</strong> where required by applicable law, such as GDPR). We do not knowingly collect personally identifiable information from children under the applicable minimum age.</p>
+      <p>If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us immediately. If We become aware that We have collected Personal Data from a child without verification of parental consent, We will take steps to remove that information from Our servers.</p>
+    </section>
+
+    <section class="policy-section" id="s11">
+      <p class="section-number">11</p>
+      <h2>Links to Other Websites</h2>
+      <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third-party link, You will be directed to that third party&rsquo;s site. We strongly advise You to review the Privacy Policy of every site You visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+    </section>
+
+    <section class="policy-section" id="s12">
+      <p class="section-number">12</p>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the &ldquo;Last updated&rdquo; date at the top.</p>
+      <p>Where changes are significant, We will provide a more prominent notice via the Application or by email. You are advised to review this Privacy Policy periodically. Changes become effective when posted on this page.</p>
+    </section>
+
+    <section class="policy-section" id="s13">
+      <p class="section-number">13</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or wish to exercise any of Your rights, please contact Us:</p>
+      <div class="info-card">
+        <p class="info-card-label">Contact Information</p>
+        <div class="info-card-row">
+          <span class="info-card-key">Email</span>
+          <span class="info-card-val"><a href="mailto:sadosdesigns@gmail.com">sadosdesigns@gmail.com</a></span>
+        </div>
+        <div class="info-card-row">
+          <span class="info-card-key">App</span>
+          <span class="info-card-val">DreamWorks (iOS)</span>
+        </div>
+        <div class="info-card-row">
+          <span class="info-card-key">Location</span>
+          <span class="info-card-val">Wyoming, United States</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2026 DreamWorks &nbsp;&middot;&nbsp; Wyoming, United States &nbsp;&middot;&nbsp; All rights reserved</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector("[data-theme-toggle]");
+      var root = document.documentElement;
+      var theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      root.setAttribute("data-theme", theme);
+      setIcon();
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          theme = theme === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", theme);
+          setIcon();
+        });
+      }
+      function setIcon() {
+        if (!toggle) return;
+        toggle.setAttribute("aria-label", "Switch to " + (theme === "dark" ? "light" : "dark") + " mode");
+        if (theme === "dark") {
+          toggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        } else {
+          toggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
